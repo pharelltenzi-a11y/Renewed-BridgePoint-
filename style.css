@@ -105,6 +105,60 @@ body.about .overlay {
 .btn.get-started:hover {
   box-shadow: 0 0 25px gold;
   transform: scale(1.05);
+}/* Get Started Button */
+.get-started-btn {
+  background-color: #d4af37;
+  color: #000;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.get-started-btn:hover {
+  background-color: #e0b84a;
+  transform: scale(1.05);
+}
+
+/* Donate Button */
+.donate-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  background-color: #b8860b;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  opacity: 0.85;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+  transition: all 0.4s ease-in-out;
+  z-index: 1000;
+}
+
+.donate-btn:hover {
+  opacity: 1;
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.6);
+  background-color: #cba135;
+}
+
+/* Gentle steady glow animation */
+@keyframes steadyGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+  }
+}
+
+.donate-btn {
+  animation: steadyGlow 3s ease-in-out infinite;
 }
 
 .btn.donate {
